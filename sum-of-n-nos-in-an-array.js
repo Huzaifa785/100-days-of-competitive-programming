@@ -19,7 +19,9 @@ let n = 3
 let n_nos = "1 2 3"
 let nums = n_nos.split(" ")
 let sum = 0
-for (let i = 0; i < nums.length; i++) {
-    sum = sum + parseInt(nums[i])
+if (n < 100) {
+    for (let i = 0; i < nums.length; i++) {
+        sum = sum + parseInt(nums[i])
+    }
+    console.log(sum)
 }
-console.log(sum)
